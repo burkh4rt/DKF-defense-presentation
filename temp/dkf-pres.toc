@@ -1,8 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {american}{}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Bayesian Filtering}{3}{0}{1}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Challenges to Effective Neural Decoding}{12}{0}{2}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Overcoming Nonstationarities}{24}{0}{3}
