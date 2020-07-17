@@ -12,7 +12,8 @@ LATEXOPTS = "xelatex -interaction=nonstopmode -synctex=1 %O %S"
 LATEXMKOPTS = -pdf -pdflatex=$(LATEXOPTS) -outdir=$(TEMPDIR)
 
 $(PROJECT).pdf: $(PROJECT).tex
-	latexmk $(LATEXMKOPTS) $<
+	docker build -t tl18 .
+	docker run --rm -ti -v $(PWD):/data tl18 latexmk $(LATEXMKOPTS) $<
 	-mv $(TEMPDIR)/$@ ./$@
 
 .DEFAULT: $(PROJECT).pdf
@@ -21,5 +22,5 @@ $(PROJECT).pdf: $(PROJECT).tex
 all: $(PROJECT).pdf
 
 clean:
-	latexmk -C
+	docker run --rm -ti -v $(PWD):/data tl18 latexmk -C
 	-rm -rf $(TEMPDIR)
