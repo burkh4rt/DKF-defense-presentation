@@ -1,5 +1,4 @@
-# REQUIRES latexmk and a working framework for XeLaTeX
-# sudo tlmgr install latexmk
+# REQUIRES docker daemon to be running
 
 SHELL = /bin/sh
 PROJECT = dkf-pres
